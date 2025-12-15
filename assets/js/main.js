@@ -1,14 +1,7 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	navLinks.classList.toggle('active');
-});
-
-document.querySelectorAll('.nav-links li a').forEach(link => {
-	link.addEventListener('click', () => {
-		hamburger.classList.remove('active');
-		navLinks.classList.remove('active');
-	});
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
