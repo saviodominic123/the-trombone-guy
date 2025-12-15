@@ -1,263 +1,263 @@
-/* =====================================================
-   MAIN.CSS - Full styling for The Trombone Guy website
+/* ===============================
+   MAIN.CSS - The Trombone Guy
    Author: Savio Dominic
-   ===================================================== */
+   =============================== */
 
 /* ---------- RESET ---------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #111;
-    color: #f5f5f5;
-    line-height: 1.6;
+  background: #111;
+  color: #f5f5f5;
+  line-height: 1.6;
 }
 
 /* ---------- HEADER ---------- */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    background: #0d0d0d;
-    border-bottom: 1px solid #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #0d0d0d;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header .logo img {
-    height: 50px;
+  height: 50px;
 }
 
 /* ---------- NAV ---------- */
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
 nav ul li a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #d4af37;
+  color: #d4af37;
 }
 
 /* ---------- HAMBURGER ---------- */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    z-index: 1100;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
 }
 
 .hamburger span {
-    height: 3px;
-    width: 25px;
-    background: #f5f5f5;
-    border-radius: 2px;
-    transition: all 0.4s ease;
+  height: 3px;
+  width: 25px;
+  background: #f5f5f5;
+  border-radius: 2px;
+  transition: all 0.4s ease;
 }
 
 /* Hamburger to X */
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 .hamburger.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* ---------- HERO ---------- */
 .hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to bottom, #111 0%, #1a1a1a 100%);
-    position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, #111 0%, #1a1a1a 100%);
+  position: relative;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    color: #d4af37;
-    margin-bottom: 20px;
-    text-shadow: 0 0 15px rgba(212,175,55,0.7);
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(212,175,55,0.7);
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
 }
 
 .btn {
-    text-decoration: none;
-    padding: 12px 30px;
-    background: #1a1a1a;
-    border: 1px solid #d4af37;
-    color: #d4af37;
-    font-weight: 600;
-    border-radius: 6px;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(212,175,55,0.4);
+  text-decoration: none;
+  padding: 12px 30px;
+  background: #1a1a1a;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(212,175,55,0.4);
 }
 
 .btn:hover {
-    background: #d4af37;
-    color: #111;
+  background: #d4af37;
+  color: #111;
 }
 
 /* ---------- FEATURES ---------- */
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 60px 5%;
-    gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 5%;
+  gap: 25px;
 }
 
 .feature {
-    background: rgba(28,28,28,0.9);
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid #333;
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
+  background: rgba(28,28,28,0.9);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
 }
 
 .feature:hover {
-    border-color: #d4af37;
-    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+  border-color: #d4af37;
+  box-shadow: 0 0 25px rgba(212,175,55,0.2);
 }
 
 .feature h2 {
-    margin-bottom: 10px;
-    color: #d4af37;
+  margin-bottom: 10px;
+  color: #d4af37;
 }
 
 .feature p {
-    color: #ccc;
+  color: #ccc;
 }
 
 /* ---------- UPDATES ---------- */
 .updates {
-    padding: 50px 5%;
-    background: rgba(26,26,26,0.95);
-    border-radius: 8px;
-    margin: 30px 0;
-    backdrop-filter: blur(4px);
+  padding: 50px 5%;
+  background: rgba(26,26,26,0.95);
+  border-radius: 8px;
+  margin: 30px 0;
+  backdrop-filter: blur(4px);
 }
 
 .updates h2 {
-    color: #d4af37;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.2rem;
-    text-shadow: 0 0 8px rgba(212,175,55,0.5);
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  text-shadow: 0 0 8px rgba(212,175,55,0.5);
 }
 
 .update-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
 .update-card {
-    background: #111;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 20px;
-    transition: 0.3s;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.3s;
 }
 
 .update-card:hover {
-    border-color: #d4af37;
-    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+  border-color: #d4af37;
+  box-shadow: 0 0 25px rgba(212,175,55,0.2);
 }
 
 .update-card h3 {
-    color: #d4af37;
-    margin: 15px 0 10px 0;
+  color: #d4af37;
+  margin: 15px 0 10px 0;
 }
 
 .update-card p {
-    color: #ccc;
-    font-size: 0.95rem;
+  color: #ccc;
+  font-size: 0.95rem;
 }
 
 .update-card video {
-    width: 100%;
-    border-radius: 6px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .btn-small {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 20px;
-    background: #1a1a1a;
-    color: #d4af37;
-    border: 1px solid #d4af37;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #1a1a1a;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .btn-small:hover {
-    background: #d4af37;
-    color: #111;
+  background: #d4af37;
+  color: #111;
 }
 
 /* ---------- FOOTER ---------- */
 footer {
-    text-align: center;
-    padding: 15px 5%;
-    background: #0d0d0d;
-    border-top: 1px solid #333;
-    font-size: 0.9rem;
-    color: #aaa;
+  text-align: center;
+  padding: 15px 5%;
+  background: #0d0d0d;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1.1rem; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.1rem; }
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        position: fixed;
-        right: -100%;
-        top: 0;
-        height: 100vh;
-        width: 60%;
-        background: #111;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        transition: 0.3s;
-        padding-top: 50px;
-    }
+  nav ul {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.3s;
+    padding-top: 50px;
+  }
 
-    nav ul.active { right: 0; }
-    .hamburger { display: flex; }
+  nav ul.active { right: 0; }
+  .hamburger { display: flex; }
 }
 
 @media (max-width: 480px) {
-    .hero h1 { font-size: 2rem; }
-    .hero p { font-size: 1rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
 }
