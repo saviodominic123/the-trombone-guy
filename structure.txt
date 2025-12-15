@@ -1,0 +1,42 @@
+the-trombone-guy/
+│
+├── index.html            → Home page (brand message)
+├── about.html            → About you (profile)
+├── training.html         → Training & promotion
+├── videos.html           → Your video artworks
+├── instruments.html      → Instruments & marketing
+├── contact.html          → Booking & inquiries
+│
+├── assets/
+│   │
+│   ├── css/
+│   │   ├── main.css      → Main site design
+│   │   └── marketing.css → Ads & promotions
+│   │
+│   ├── js/
+│   │   └── main.js       → JavaScript
+│   │
+│   ├── images/
+│   │   ├── logo/
+│   │   │   └── logo.png
+│   │   │
+│   │   ├── instruments/
+│   │   │   ├── trombone.png
+│   │   │   ├── trumpet.png
+│   │   │   ├── saxophone.png
+│   │   │   └── tuba.png
+│   │   │
+│   │   └── banners/
+│   │       └── training-banner.jpg
+│   │
+│   └── media/
+│       ├── videos/
+│       │   ├── trombone-training.mp4
+│       │   ├── trumpet-training.mp4
+│       │   ├── saxophone-training.mp4
+│       │   └── tuba-training.mp4
+│       │
+│       └── thumbnails/
+│           └── video-thumb.jpg
+│
+└── README.md
