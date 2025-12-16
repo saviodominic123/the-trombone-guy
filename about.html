@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Trombone Guy | About</title>
-<link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | The Trombone Guy</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-<header>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
   <div class="logo">
-    <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+    <img src="assets/images/logo/logo.png" alt="The Trombone Guy Logo" class="logo-img">
+    <span>The Trombone Guy</span>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="instruments.html">Instruments</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="training.html">Training</a>
+    <a href="videos.html">Videos</a>
+    <a href="instruments.html">Instruments</a>
+    <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
-  <h1>About Me</h1>
-  <p>I am Savio Dominic, passionate brass musician and trainer. Sharing my expertise globally.</p>
-</section>
-
-<section class="updates">
-  <h2>My Journey</h2>
-  <div class="update-cards">
-    <div class="update-card">
-      <h3>Started Playing</h3>
-      <p>Began my musical journey at age 10, mastering trombone and other brass instruments.</p>
-    </div>
-    <div class="update-card">
-      <h3>Performed Globally</h3>
-      <p>Collaborated with international artists and performed at prestigious events.</p>
-    </div>
-    <div class="update-card">
-      <h3>Training & Mentorship</h3>
-      <p>Helping students worldwide improve and master brass instruments.</p>
-    </div>
+  <div class="animated-bg"></div>
+  <div class="hero-content">
+    <h1>About The Trombone Guy</h1>
+    <p>Professional Brass Musician • Educator • Performer</p>
   </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 The Trombone Guy. All Rights Reserved.</p>
+<!-- ================= ABOUT CONTENT ================= -->
+<section class="highlights">
+  <div class="card">
+    <h3>Who I Am</h3>
+    <p>I am a dedicated brass musician with years of experience in trombone, trumpet, saxophone, and tuba performance. My passion is teaching and inspiring the next generation of musicians.</p>
+  </div>
+  <div class="card">
+    <h3>What I Do</h3>
+    <p>I provide professional training for musicians from beginners to advanced players, as well as live performances and recordings with top-notch quality.</p>
+  </div>
+  <div class="card">
+    <h3>My Vision</h3>
+    <p>To create a world-class brand for brass music in Africa, training musicians to achieve mastery while promoting the beauty of our musical heritage.</p>
+  </div>
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="cta">
+  <div class="cta-content">
+    <h2>Excellence Is Trained</h2>
+    <a href="training.html" class="btn gold">View Training Programs</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 The Trombone Guy. All Rights Reserved.</p>
 </footer>
 
 <script src="assets/js/main.js"></script>

@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Trombone Guy | Home</title>
-<link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Trombone Guy | Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-<header>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
   <div class="logo">
-    <a href="index.html"><img src="assets/images/logo/logo.png" alt="Logo"></a>
+    <img src="assets/images/logo/logo.png" alt="The Trombone Guy Logo" class="logo-img">
+    <span>The Trombone Guy</span>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="instruments.html">Instruments</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="training.html">Training</a>
+    <a href="videos.html">Videos</a>
+    <a href="instruments.html">Instruments</a>
+    <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </header>
 
-<section class="hero">
-  <h1>Welcome to The Trombone Guy</h1>
-  <p>Master your brass instruments. Watch, Learn, Play!</p>
-  <a href="training.html" class="btn">Start Training</a>
-</section>
-
-<section class="features">
-  <div class="feature">
-    <img src="assets/images/instruments/trombone.png" alt="Trombone">
-    <h2>Trombone Mastery</h2>
-    <p>Learn advanced techniques and songs.</p>
-  </div>
-  <div class="feature">
-    <img src="assets/images/instruments/trumpet.png" alt="Trumpet">
-    <h2>Trumpet Training</h2>
-    <p>Step-by-step tutorials for all levels.</p>
-  </div>
-  <div class="feature">
-    <img src="assets/images/instruments/saxophone.png" alt="Saxophone">
-    <h2>Saxophone Lessons</h2>
-    <p>Master melodies with easy guidance.</p>
-  </div>
-  <div class="feature">
-    <img src="assets/images/instruments/tuba.png" alt="Tuba">
-    <h2>Tuba Techniques</h2>
-    <p>Learn to play like a professional.</p>
+<!-- ================= HERO ================= -->
+<section class="hero logo-hero">
+  <div class="animated-bg"></div>
+  <div class="hero-content">
+    <img src="assets/images/logo/logo.png" alt="The Trombone Guy Logo" class="hero-logo">
+    <h1>Welcome to The Trombone Guy</h1>
+    <p>Professional Brass Musician • Trainer • Performer</p>
+    <a href="training.html" class="btn gold">Start Training</a>
   </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 The Trombone Guy. All Rights Reserved.</p>
+<!-- ================= FEATURE HIGHLIGHTS ================= -->
+<section class="highlights">
+  <div class="card">
+    <h3>Expert Training</h3>
+    <p>From beginner to advanced brass mastery programs.</p>
+  </div>
+  <div class="card">
+    <h3>Performance</h3>
+    <p>Live and studio sessions with world-class quality.</p>
+  </div>
+  <div class="card">
+    <h3>Instruments</h3>
+    <p>Professional brass instruments and marketing advice.</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 The Trombone Guy. All Rights Reserved.</p>
 </footer>
 
 <script src="assets/js/main.js"></script>
