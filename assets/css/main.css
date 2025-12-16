@@ -69,6 +69,17 @@ body {
     transition: 0.3s;
 }
 
+/* Hamburger animation X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ================= HERO ================= */
 .hero {
     position: relative;
@@ -135,6 +146,13 @@ body {
     max-width: 300px;
     text-align: center;
     transition: transform 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card:hover {
@@ -160,6 +178,13 @@ body {
     flex-direction: column;    /* heading above button */
     text-align: center;
     height: 200px;             /* adjust if needed */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.cta.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cta .cta-content h2 {

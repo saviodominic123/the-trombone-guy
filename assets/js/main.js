@@ -10,7 +10,7 @@ const nav = document.getElementById('nav');
 if (hamburger && nav) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    nav.classList.toggle('open');
+    nav.classList.toggle('active'); // Match CSS
   });
 }
 
@@ -19,8 +19,8 @@ const navLinks = document.querySelectorAll('.nav a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    if (nav.classList.contains('open')) {
-      nav.classList.remove('open');
+    if (nav.classList.contains('active')) {
+      nav.classList.remove('active');
       hamburger.classList.remove('active');
     }
   });
