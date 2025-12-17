@@ -1,21 +1,16 @@
-/* =====================================
-   MAIN.JS – THE TROMBONE GUY
-   Clean • Professional • Responsive
-   ===================================== */
-
-// ---------- HAMBURGER MENU ----------
+/* ================= HAMBURGER MENU ================= */
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
 if (hamburger && nav) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
-    nav.classList.toggle('active'); // Match CSS
+    nav.classList.toggle('active'); // matches your CSS
   });
 }
 
-// ---------- CLOSE MENU ON LINK CLICK (MOBILE) ----------
-const navLinks = document.querySelectorAll('.nav a');
+/* ================= CLOSE MENU ON LINK CLICK (MOBILE) ================= */
+const navLinks = document.querySelectorAll('.nav a'); // FIXED from docum
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -26,7 +21,7 @@ navLinks.forEach(link => {
   });
 });
 
-// ---------- SCROLL FADE-IN ANIMATION ----------
+/* ================= SCROLL FADE-IN ANIMATION ================= */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -38,7 +33,7 @@ const observer = new IntersectionObserver((entries) => {
 const animatedSections = document.querySelectorAll('.card, .hero-content, .cta');
 animatedSections.forEach(section => observer.observe(section));
 
-// ---------- SMOOTH PAGE LOAD ----------
+/* ================= SMOOTH PAGE LOAD ================= */
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
 });

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Trombone Guy | Gallery</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- MAIN SITE CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- ================= GALLERY FIX CSS ================= -->
+  <!-- This guarantees the gallery works -->
+  <style>
+    .gallery-section {
+      padding: 60px 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      background: #1a1a1a;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* MESSAGE OVERLAY */
+    .gallery-message {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+      color: gold;
+      font-size: 0.95rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    /* HOVER EFFECT */
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-message {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="logo">
+    <img src="assets/images/logo/logo.png" alt="Logo" class="logo-img">
+    <span>The Trombone Guy</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="training.html">Training</a>
+    <a href="videos.html">Videos</a>
+    <a href="updates.html">Updates</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="instruments.html">Instruments</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero small-hero">
+  <div class="hero-content">
+    <h1>Art Gallery</h1>
+    <p>Moments • Instruments • Creativity</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery-section">
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="assets/images/gallery/art1.jpg" alt="Art 1">
+      <div class="gallery-message">Creative expression through sound and vision</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/gallery/art2.jpg" alt="Art 2">
+      <div class="gallery-message">Moments captured from live performance</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/gallery/art3.jpg" alt="Art 3">
+      <div class="gallery-message">Art, rhythm, and musical identity</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/gallery/art4.jpg" alt="Art 4">
+      <div class="gallery-message">The beauty of disciplined practice</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/gallery/art5.jpg" alt="Art 5">
+      <div class="gallery-message">Where passion meets performance</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/instruments/trombone.png" alt="Trombone">
+      <div class="gallery-message">The voice behind the brand</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/instruments/trumpet.png" alt="Trumpet">
+      <div class="gallery-message">Bold tones that command attention</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/images/instruments/saxophone.png" alt="Saxophone">
+      <div class="gallery-message">Smooth sound with timeless character</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2025 The Trombone Guy. All Rights Reserved.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
