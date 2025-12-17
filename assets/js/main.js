@@ -2,20 +2,26 @@
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
-if (hamburger && nav) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('active'); // matches your CSS
-  });
-}
+hamburger.addEventListener('click', (e) => {
+  e.stopPropagation(); // prevent click from bubbling
+  nav.classList.toggle('mobile-active');
+  hamburger.classList.toggle('active');
+});
 
-/* ================= CLOSE MENU ON LINK CLICK (MOBILE) ================= */
-const navLinks = document.querySelectorAll('.nav a'); // FIXED from docum
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (nav.classList.contains('mobile-active') && !nav.contains(e.target) && e.target !== hamburger) {
+    nav.classList.remove('mobile-active');
+    hamburger.classList.remove('active');
+  }
+});
 
+// Close menu on link click
+const navLinks = document.querySelectorAll('.nav a');
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    if (nav.classList.contains('active')) {
-      nav.classList.remove('active');
+    if (nav.classList.contains('mobile-active')) {
+      nav.classList.remove('mobile-active');
       hamburger.classList.remove('active');
     }
   });
